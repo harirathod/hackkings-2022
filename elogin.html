@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Gov.org </title>
+    </head>
+
+<body style="background-color:rgb(185, 249, 194);">
+<style>
+    h1, h4, h2, label   {color:rgb(28, 97, 38) ;}
+    input  {color: rgb(6, 6, 6);}
+    </style>
+    <h1 style="margin-left: 20px;">gov.org</h1>
+    <div style="align-self: center ; width: 400px; align-tracks: center;" class="widget-container" >
+        <form style="align-self:flex-start ; background-color:#b2f7e8; border-color:rgb(0, 53, 18)" class="widget" id="create-train-form" style="display: inline-flex; flex-direction: column;">
+            <h2 style="align-self: center;">Input Employee Data</h2>
+
+            <div class="create-train__input flex-column">
+                <label for="name">ID</label>
+                <input type="number" id="name" name="name"></input>
+            </div>
+            <div class="create-train__input flex-column">
+                <label for="name">Crate ID</label>
+                <input type="number" id="name" name="name"></input>
+            </div>
+            <div class="create-train__input flex-column">
+                <label for="name">Crate Weight (kg)</label>
+                <input type="number" id="name" name="name"></input>
+            </div>
+            <div class="create-train__input flex-column">
+                <label for="name">Hours Worked (hours)</label>
+                <input type="number" id="name" name="name"></input>
+            </div>
+            <div class="create-train__input flex-column">
+                <label for="name">Amount expect to be paid (GBP)</label>
+                <input type="number" id="name" name="name"></input>
+            </div>
+            <div class="create-train__input flex-column">
+                <label for="name">Date</label>
+                <input type="date" id="name" name="name"></input>
+            </div>
+
+            <button style="background-color:rgb(167, 230, 249); color:rgb(11, 79, 157);"; >Submit Crate</button>
+        </form>
+    </div>
+</body>
+<style>
+    body {
+        background-image: linear-gradient(rgb(161, 245, 161), rgb(164, 236, 251));
+        background: #0000000a;
+        font-family: "Segoe UI VSS (Regular)", "Segoe UI", "-apple-system", BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+                    *{
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .widget-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    button {
+        margin-top: 15px;
+        background-color: #000000;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        line-height: 32px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #686868;
+    }
+
+    .widget {
+        background: white;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        margin: 20px;
+        padding: 20px;
+        overflow: auto;
+        min-width: 300px;
+        flex: 1;
+    }
+
+    #train-list {
+        height: 100%;
+        max-height: 350px;
+        overflow: auto;
+    }
+
+    .create-train__input {
+        margin-bottom: 16px;
+    }
+
+    .train {
+        margin-bottom: 12px;
+        background: #0000000a;
+        border: 1px solid #00000036;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+</html>
